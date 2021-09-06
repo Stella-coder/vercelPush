@@ -23,7 +23,7 @@ app.get("/", (req, res) => {
   res.send("Welcome to my Api");
 });
 
-app.use("/api", router);
+app.use("/", router);
 
 app.listen(port, () => {
   console.log(`server is listening to port ${port}`);

@@ -13,7 +13,7 @@ router.post("/", async (req, res) => {
     res.json(err.message);
   }
 });
-router.get("/", async (req, res) => {
+router.get("/user", async (req, res) => {
   try {
     const newEntry = await model.find();
     res.status(200).json(newEntry);
